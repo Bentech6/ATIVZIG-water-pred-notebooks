@@ -1,8 +1,8 @@
 import os
 import yaml
 
-from src import PROJECT_PATH
-from src.model.lstm_lstm_model import LSTMSequenceModel
+from ativizig_pred.src import PROJECT_PATH
+from ativizig_pred.src.model.lstm_lstm_model import LSTMSequenceModel
 
 
 class LSTMLSTMModelLoader:

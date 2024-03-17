@@ -8,9 +8,9 @@ import pandas as pd
 from pytorch_forecasting.data import TimeSeriesDataSet
 from pytorch_forecasting.data.encoders import EncoderNormalizer
 
-from src import PROJECT_PATH
-from src.data.data_preprocessor import DataPreprocessor
-from src.data.downloader import Downloader
+from ativizig_pred.src import PROJECT_PATH
+from ativizig_pred.src.data.data_preprocessor import DataPreprocessor
+# from ativizig_pred.src.data.downloader import Downloader
 
 
 class LSTMLSTMModelDataPreprocessor:
@@ -19,11 +19,11 @@ class LSTMLSTMModelDataPreprocessor:
     """
     def __init__(self):
         model_name = "t19"
-        Downloader(gdrive_id="1MnTYl60N6sGnD0AMeqcrBOHigEKjEIkp",
-                   file_name=model_name + ".json")
+        # Downloader(gdrive_id="1MnTYl60N6sGnD0AMeqcrBOHigEKjEIkp",
+        #            file_name=model_name + ".json")
         model_files = json.load(open(os.path.join(PROJECT_PATH, "data", model_name + ".json")))
-        Downloader(gdrive_id=model_files[model_name]["hparams"], file_name="hparams_" + model_name + ".yaml")
-        Downloader(gdrive_id=model_files[model_name]["parameter"], file_name="parameter_file_" + model_name)
+        # Downloader(gdrive_id=model_files[model_name]["hparams"], file_name="hparams_" + model_name + ".yaml")
+        # Downloader(gdrive_id=model_files[model_name]["parameter"], file_name="parameter_file_" + model_name)
 
     @staticmethod
     def get_dataloaders(data: pd.DataFrame, scalers: dict, train: bool, max_encoder_length: int,

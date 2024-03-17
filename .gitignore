@@ -5,6 +5,6 @@ plots/
 *.ipynb
 *.csv
 *.json
-data/generated
+ativizig_pred/data/generated
 *.pth
 *.pickle

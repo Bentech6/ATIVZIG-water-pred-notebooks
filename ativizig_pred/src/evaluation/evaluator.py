@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from src.evaluation.evaluation_base import EvaluationBase
+from ativizig_pred.src.evaluation.evaluation_base import EvaluationBase
 
 
 class Evaluator(EvaluationBase):

@@ -3,8 +3,8 @@ import datetime
 import numpy as np
 import pandas as pd
 
-from src.data.data_preprocessor import DataPreprocessor
-from src.data.lstm_lstm_model_data_preprocessor import LSTMLSTMModelDataPreprocessor
+from ativizig_pred.src.data.data_preprocessor import DataPreprocessor
+from ativizig_pred.src.data.lstm_lstm_model_data_preprocessor import LSTMLSTMModelDataPreprocessor
 
 
 class LSTMLSTMModelInference:
