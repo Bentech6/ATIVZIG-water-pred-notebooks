@@ -18,10 +18,11 @@ class LSTMLSTMModelDataPreprocessor:
     A class to manage data manipulations for the LSTM-LSTM model.
     """
     def __init__(self):
-        model_name = "t19"
+        pass
+        # model_name = "t19"
         # Downloader(gdrive_id="1MnTYl60N6sGnD0AMeqcrBOHigEKjEIkp",
         #            file_name=model_name + ".json")
-        model_files = json.load(open(os.path.join(PROJECT_PATH, "data", model_name + ".json")))
+        # model_files = json.load(open(os.path.join(PROJECT_PATH, "data", model_name + ".json")))
         # Downloader(gdrive_id=model_files[model_name]["hparams"], file_name="hparams_" + model_name + ".yaml")
         # Downloader(gdrive_id=model_files[model_name]["parameter"], file_name="parameter_file_" + model_name)
 

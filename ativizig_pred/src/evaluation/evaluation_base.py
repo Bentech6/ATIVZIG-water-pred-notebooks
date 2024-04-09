@@ -201,5 +201,5 @@ class EvaluationBase:
         :param pd.Series modeled: The modeled data. (prediction)
         :return pd.Series: the calculated correlation between the prediction and the real data based on the future.
         """
-        corr = observed.corrwith(modeled, axis=0)
+        corr = observed.corr(modeled)
         return corr

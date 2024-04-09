@@ -33,7 +33,7 @@ class LSTMLSTMModelLoader:
         This method loads the selected model and the hyperparameters.
         :param str model_name: the name of the model
         """
-        self.p_yaml_dict = yaml.load(open(os.path.join(PROJECT_PATH, "data", "hparams_" + model_name + ".yaml")),
+        self.p_yaml_dict = yaml.load(open(os.path.join(PROJECT_PATH, "models", "lstm-lstm_" + model_name + "_hparams.yaml")),
                                      Loader=yaml.Loader)
         self.model = LSTMSequenceModel(**self.p_yaml_dict)
         self.__load_hyperparameters()

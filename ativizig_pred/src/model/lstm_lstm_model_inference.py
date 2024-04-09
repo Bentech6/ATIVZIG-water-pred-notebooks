@@ -55,8 +55,8 @@ class LSTMLSTMModelInference:
 
         data_to_conf_calc = dm.filter_by_dates(conf_start, filter_end)
 
-        last_date = df.index[-1]
-        last_date = datetime.datetime.strptime(last_date, "%Y-%m-%d")
+        last_date = str(df.index[-1])
+        last_date = datetime.datetime.strptime(last_date, '%Y-%m-%d %H:%M:%S')
 
         if filter_end > last_date:
             df_append = pd.DataFrame(
